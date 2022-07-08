@@ -24,6 +24,7 @@ int main(void)
         s=s+s/3-s/4;
         n=n+1;
         printf("years:"n);
+        
 
 
     }
