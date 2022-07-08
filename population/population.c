@@ -13,7 +13,9 @@ int main(void)
     {
 
         int e = get_int("give end size ");
+    }
     if (e<s)
+
     {
         int e = get_int("give end size ");
     }
@@ -24,14 +26,14 @@ int main(void)
         s=s+s/3-s/4;
         n=n+1;
         printf("years:"n);
+    }
 
 
 
 
 
     }
-    }
-}
+
 
 
 
