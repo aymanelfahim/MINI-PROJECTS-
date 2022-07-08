@@ -5,7 +5,7 @@ int main(void)
 {
     // TODO: Prompt for start s
     int s = get_int("give start size");
-    if s<9
+    if (s<9)
     {
         int s = get_int("give start size");
         }
@@ -13,7 +13,7 @@ int main(void)
     {
 
         int e = get_int("give end size ");
-    if e<s
+    if (e<s)
     {
         int e = get_int("give end size ");
     }
@@ -24,7 +24,9 @@ int main(void)
         s=s+s/3-s/4;
         n=n+1;
         printf("years:"n);
-        
+
+
+
 
 
     }
