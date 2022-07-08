@@ -7,7 +7,7 @@ int main(void)
     int s = get_int("give start size");
     if (s<9)
     {
-    int s = get_int("give start size");
+        int s = get_int("give start size");
         }
     else
     {
