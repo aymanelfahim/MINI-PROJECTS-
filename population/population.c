@@ -22,7 +22,7 @@ while (e>=s);
 
 s=s+s/3-s/4;
 n=n+1;
-printf(n)
+printf(n);
 }
 }
 
