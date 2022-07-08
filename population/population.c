@@ -16,7 +16,7 @@ int main(void)
   }
   while (e<s);
 int n = 0;
-while (e>=s);
+while (e>s);
 {
 
 
