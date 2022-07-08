@@ -15,17 +15,19 @@ int main(void)
     e=get_int("give end");
   }
   while (e<s);
-int n =
+int n = 0;
+while (e>=s);
+{
+
+
+s=s+s/3-s/4;
+n=n+1;
+printf(n)
+}
+}
 
 
 
-
-
-  int n=0;
-  while (e>=s)
-  s=s+s/3-s/4;
-  n=n+1;
-  printf("years:"n);
 
 
 
