@@ -11,6 +11,7 @@ int main(void)
         }
     else
     {
+
         int e = get_int("give end size ");
     if e<s
     {
