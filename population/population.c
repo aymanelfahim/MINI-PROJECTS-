@@ -8,7 +8,8 @@ int main(void)
   {
     s=get_int("give start)
   }
-  while()
+  while(s<9);
+  
 
 
 
