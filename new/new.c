@@ -5,8 +5,8 @@ int main(void)
 { int n;
 do
 {
-    int n = get_int
-}
+     n = get_int("height:");
+}while (n<8) 
 
 
 }
