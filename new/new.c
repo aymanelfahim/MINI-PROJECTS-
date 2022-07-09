@@ -6,7 +6,8 @@ int main(void)
 do
 {
      n = get_int("height:");
-}while (n<8)
+}while (n<=8 and n>0);
+
 
 
 }
