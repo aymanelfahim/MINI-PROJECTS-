@@ -2,7 +2,11 @@
 #include <stdio.h>
 
 int main(void)
-{ int n
+{ int n;
+do
+{
+    int n = get_int
+}
 
 
 }
