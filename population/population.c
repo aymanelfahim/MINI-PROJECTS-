@@ -16,14 +16,15 @@ int main(void)
   }
   while (e<s);
 int n = 0;
-while (e>s);
+while (e>s)
 {
 
 
 s=s+s/3-s/4;
 n=n+1;
-printf(n);
+
 }
+printf("YEARS:%i\n",n);
 }
 
 
