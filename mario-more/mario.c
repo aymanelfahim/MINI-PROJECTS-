@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 int main(void)
-{int n;
+{
+    int n;
 do
  {
     n = get_int("height:");
@@ -14,9 +15,16 @@ do
    printf("#");
    for (int k = 0; k<n-i-1; k++)
    printf(" ");
+   for (int g = 0; g < n; g++)
+    {
+        for (int l = 0; l < n; l++)
+        {
+            printf("  ");
+        }
       printf("\n");
    }
+  }
+}
 
 
-    }
 
