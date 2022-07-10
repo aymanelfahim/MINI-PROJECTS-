@@ -7,12 +7,16 @@ do
  {
     n = get_int("height:");
      }
-  while (n < 1 || n>8 )
+  while (n < 1 || n>8 );
   for (int i = 0; i < n; i++)
   {
    for (int j = 0; j < i+1; j++)
-   }
    printf("#");
-   printf("\n"); }
+   for (int k = 0; k<n-i-1; k++)
+   printf(" ");
+      printf("\n");
+   }
 
-}
+
+    }
+
