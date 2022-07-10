@@ -15,7 +15,12 @@ do
    printf(" ");
    for (int j = 0; j < i+1; j++)
    printf("#");
-   
+   for (int g =0;g<2;g++)
+   printf("  ");
+   for (int j = 0; j < i+1; j++)
+   printf("#");
+
+
 
 printf("\n");
 
