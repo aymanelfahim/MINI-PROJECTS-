@@ -18,7 +18,7 @@ int main(void)
     // Score both words
     int score1 = compute_score(word1);
     int score2 = compute_score(word2);
-    if (score1<score2)
+    if (score2>score1)
     {
         printf("player 2 win");
     }
