@@ -49,12 +49,10 @@ int compute_score(string word)
     POINTS [i] = word [i+65];
 
     }
+    for (int j = 0 ;j < ; i++)
 
 
 
-
-
-
-    return POINTS
+    return
 
 }
