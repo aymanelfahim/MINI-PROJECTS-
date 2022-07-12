@@ -20,7 +20,7 @@ int main(void)
     int score2 = compute_score(word2);
     if (score1<score2)
     {
-        printf("player 1 win");
+        printf("player 2 win");
     }
     else if
     (score1>score2)
@@ -48,12 +48,12 @@ int compute_score(string word)
 
     POINTS [i] = word[i]+65;
 
-    }
+
     for (int k = 0 ;k <strlen(word) ; k=k+2)
 
     n=POINTS[k]+POINTS[k+1];
 
 
     return n;
-
 }
+
