@@ -5,7 +5,7 @@
 
 int main(int argc, string argv[])
 {
-    for (int i = 0, n = strlen(argv); i < n; i++)
+    for (int i = 0, n = strlen(argv[]); i < n; i++)
     {
         if (argc = 2 && isdigit(argv[i]))
     {
