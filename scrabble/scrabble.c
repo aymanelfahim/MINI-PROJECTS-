@@ -49,11 +49,9 @@ int compute_score(string word)
     POINTS [i] = word[i]+65;
 
     }
-    for (int j = 0 ;j <strlen(word) ; j=j+1)
-    mot[j]=word[j]
     for (int k = 0 ;k <strlen(word) ; k=k+2)
 
-    n=word[k]+word[k+1];
+    n=POINTS[k]+POINTS[k+1];
 
 
     return n;
