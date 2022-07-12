@@ -44,7 +44,7 @@ int compute_score(string word)
 {
     int score= 0;
     for (int i = 0 ;i < strlen(word); i++)
-    score = int(A)  + i;
+    score = score + POINTS;
 
 
     for (int k = 0 ;k <strlen(word) ; k=k+2)
