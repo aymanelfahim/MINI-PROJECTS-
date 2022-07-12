@@ -23,5 +23,7 @@ int main(void)
 
 int compute_score(string word)
 {
-    points [ =
+    for (int i =0 ;i<26;i++)
+    points [i] =int word [i+65]
+    
 }
