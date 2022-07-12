@@ -3,12 +3,15 @@
 #include <ctype.h>
 
 int main(int argc, string argv[])
-{ char c = argv[1];
-    if (argc = 2 && isdigit(c))
+{
+    for (int i = 0, i<strlen (argv); i++)
+    {
+        if (argc = 2 && isdigit(argv[i]))
     {
         a=get_string("plaint text:")
 
 
+    }
     }
     else
     {
