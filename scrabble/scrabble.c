@@ -37,7 +37,7 @@ int main(void)
 
 
 
-}
+
 
 int compute_score(string word)
 {
