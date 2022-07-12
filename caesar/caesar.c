@@ -3,7 +3,7 @@
 
 int main(int argc, string argv[])
 {
-    if (argc != 2 || argv )
+    if (argc != 2 || argv[2])
     {
         printf("Usage: ./caesar key\n\n");
         return 1;
