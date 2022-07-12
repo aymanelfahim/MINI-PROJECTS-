@@ -42,9 +42,9 @@ int main(void)
 int compute_score(string word)
 {
     for (int i =0 ;i<26;i++)
-    points [i] =int word [i+65]
+    POINTS [i] =int word [i+65]
     if (islower(word (i))
     int toupper(char word)
-    return points
+    return POINTS
 
 }
