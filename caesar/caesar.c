@@ -1,10 +1,11 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 int main(int argc, string argv[])
 {
-    for (int i = 0, i<strlen (argv); i++)
+    for (int i = 0, n = strlen(argv); i < n; i++)
     {
         if (argc = 2 && isdigit(argv[i]))
     {
