@@ -46,7 +46,7 @@ int compute_score(string word)
     for (int i = 0 ;i < 26; i++)
 
 
-    POINTS [i] = mot [i]+65;
+    POINTS [i] = word[i]+65;
 
     }
     for (int j = 0 ;j <strlen(word) ; j=j+1)
