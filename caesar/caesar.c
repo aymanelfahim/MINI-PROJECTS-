@@ -43,8 +43,8 @@ if  (argc != 2)
 
 
 
-        printf("ciphertext: %s",a );
-    }
+    }         printf("ciphertext: %s",a );
+
     }
 
 
