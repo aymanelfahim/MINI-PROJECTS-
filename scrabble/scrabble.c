@@ -43,8 +43,8 @@ int main(void)
 int compute_score(string word)
 {
     int score= 0;
-    for (int i = 0 ;i < 26; i++)
-    POINTS [i] = int(A)  + i;
+    for (int i = 0 ;i < strlen(word); i++)
+    score = int(A)  + i;
 
 
     for (int k = 0 ;k <strlen(word) ; k=k+2)
