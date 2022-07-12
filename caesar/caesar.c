@@ -13,10 +13,11 @@ int main(int argc, string argv[])
         int atoi(string argv[1]);
         argv[1]=k
     {
+
         a=get_string("plaint text:")
         for (int i = 0, n = strlen(a); i < n; i++)
-        int b = 0
-        a[i]=a[i]+k
+        if 
+        a[i]=(a[i]+k)
 
 
         printf("ciphertext%s"a );
