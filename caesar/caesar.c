@@ -17,15 +17,30 @@ int main(int argc, string argv[])
         a=get_string("plaint text:")
         for (int j = 0, n = strlen(a); j < n; j++)
 {
-        if (is upper(a))
+        if (is upper(a[j]))
         {
         a[j]=a[j]-65;
         }
-        if ( is lower(a))
+        if ( is lower(a[j]))
         a[j]=a[j]-91;
 }
         for (int g = 0, n = strlen(a); g < n; g++)
+        {
         a[g]=(a[g]+k)%26;
+        }
+        for (int l = 0, n = strlen(a); l < n; l++)
+        {
+        if (is lower(a[l]) )
+        { a[l]=a[l]+91
+
+        }
+        if (is upper(a[l]))
+        {
+            a[l]=a[l]+65
+
+        }
+
+
 
         printf("ciphertext%s"a );
     }
