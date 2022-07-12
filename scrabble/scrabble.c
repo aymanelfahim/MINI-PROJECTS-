@@ -50,7 +50,7 @@ int compute_score(string word)
 
     }
     for (int j = 0 ;j <strlen(word) ; j++)
-    n=point
+    n=points
 
 
     return
