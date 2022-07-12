@@ -3,6 +3,10 @@
 
 int main(int argc, string argv[])
 {
+    if (argc = 2)
+    {
+
+    }
     a=get_string("plaint text:")
 
 
