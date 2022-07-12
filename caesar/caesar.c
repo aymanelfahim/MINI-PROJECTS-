@@ -14,9 +14,11 @@ int main(int argc, string argv[])
         argv[1]=k
     {
         a=get_string("plaint text:")
-        
+        for (int i = 0, n = strlen(a); i < n; i++)
+        a[i]=a[i]+k
 
 
+        printf("ciphertext%s"a );
     }
     }
 
@@ -33,7 +35,7 @@ int main(int argc, string argv[])
 
 
 
-    printf("ciphertext%s" )
+
 
 
 }
