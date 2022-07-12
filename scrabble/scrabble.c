@@ -53,7 +53,7 @@ int compute_score(string word)
     mot[j]=word[j]
     for (int k = 0 ;k <strlen(word) ; k=k+2)
 
-    n=mot[k]+POINTS[k+1];
+    n=word[k]+word[k+1];
 
 
     return n;
