@@ -31,8 +31,7 @@ int main(void)
     {
         printf("its a tie");
     }
-
-
+printf("\n");
 
     }
 
