@@ -44,15 +44,15 @@ int compute_score(string word)
 {
     for (int i = 0 ;i < 26; i++)
     {
-    if (islower(word [i+65]))
-    toupper (word[i+65]);
     POINTS [i] = word [i+65];
 
     }
+    int n = 0;
     for (int j = 0 ;j <strlen(word) ; j=j+2)
-    n=points[j]+points[j+1]
+
+    n=POINTS[j]+POINTS[j+1];
 
 
-    return
+    return n;
 
 }
