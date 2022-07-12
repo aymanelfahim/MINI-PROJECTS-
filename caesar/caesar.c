@@ -12,9 +12,7 @@ int main(int argc, string argv[])
         {
         int atoi(string argv[1]);
         argv[1]=k
-    
-
-        a=get_string("plaint text:")
+         a=get_string("plaint text:")
         for (int j = 0, n = strlen(a); j < n; j++)
 {
         if (is upper(a[j]))
