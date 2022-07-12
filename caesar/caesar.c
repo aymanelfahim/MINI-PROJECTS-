@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 int main(int argc, string argv[])
-{ char c = argv[1]
+{ string c = argv[1];
     if (argc = 2 && isdigit(c))
     {
         a=get_string("plaint text:")
