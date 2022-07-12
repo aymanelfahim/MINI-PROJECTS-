@@ -45,14 +45,14 @@ int compute_score(string word)
     {
     POINTS [i] = word [i+65];
     if (islower(word [i]))
-    int toupper(char word)
+    int toupper(char word);
     }
 
 
 
 
 
-    
+
     return POINTS
 
 }
