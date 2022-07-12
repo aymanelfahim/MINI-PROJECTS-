@@ -21,20 +21,20 @@ if  (argc != 2)
         }
 }
 
-        key=atoi(argv[1])
+        int key = atoi(argv[1]);
 
-        a=get_string("plaint text:")
+        string a = get_string("plaint text:");
         for (int j = 0, n = strlen(a); j < n; j++)
 {
         if (isupper(a[j]))
         {
         a[j]=(a[j]-65+key)%26;
-        a[j]=a[j]+65
+        a[j]=a[j]+65;
         }
         if ( islower(a[j]))
         {
         a[j]=(a[j]-91+key)%26;
-        a[j]=a[j]+91
+        a[j]=a[j]+91;
         }
 
 
@@ -46,7 +46,7 @@ if  (argc != 2)
         printf("ciphertext: %s",a );
     }
     }
-        }
+
 
 
 
