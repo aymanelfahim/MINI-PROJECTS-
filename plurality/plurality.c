@@ -99,7 +99,7 @@ void print_winner(void)
         }
         else
         {
-            
+            winner = candidates[g-1].votes
         }
 
 
