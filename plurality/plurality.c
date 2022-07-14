@@ -68,6 +68,7 @@ bool vote(string name)
 while (candidates[j]!=candidates[j+1])
 
 {
+
 for (int j = 0;  ;j < candidate_count ; j++)
 {
 
