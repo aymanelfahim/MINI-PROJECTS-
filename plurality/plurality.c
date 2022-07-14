@@ -69,7 +69,8 @@ bool vote(string name)
 
 {
 for (int j = 0; j <candidate_count ; j++)
-for (int g = 0; j <candidate_count ; j++)
+while (candidates[j]!=condidates[candidate_count-j]
+{
 
     {
         if (strcmp(candidates[j].name,name ) == 0)
@@ -77,12 +78,14 @@ for (int g = 0; j <candidate_count ; j++)
             candidates.votes[j]=candidates.votes[j]+1
 
             return 0;
+
         }
+        return false;
     }
 }
 
 
-    return false;
+
 }
 
 // Print the winner (or winners) of the election
