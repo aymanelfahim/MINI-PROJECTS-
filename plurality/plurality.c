@@ -105,5 +105,5 @@ void print_winner(void)
 
     }
 
-printf(" the winner is %s",win);
+printf(" the winner is %s"/n,win);
 }
