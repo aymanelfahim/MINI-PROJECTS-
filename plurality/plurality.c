@@ -95,21 +95,17 @@ void print_winner(void)
         {
             winner = candidates[g].votes;
             win = candidates[g].name;
-            
-
-
-
-
-
-        }
-
-
- {
-    continue;
- }
-
-
-    }
-
+} else
+continue ;
 printf(" the winner is %s\n",win);
+    }
 }
+
+
+
+
+
+
+
+
+
