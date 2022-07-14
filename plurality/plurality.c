@@ -100,10 +100,10 @@ void print_winner(void)
         else
  {
     continue;
+ }
 
 
     }
 
-printf(" the winner is "%s,win);
-
+printf(" the winner is %s",win);
 }
