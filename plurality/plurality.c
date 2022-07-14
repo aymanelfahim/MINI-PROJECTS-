@@ -91,7 +91,7 @@ while (candidates[j]!=condidates[candidate_count-j]
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
-    
+    if candidates.votes[j]
 
 
 
