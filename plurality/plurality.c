@@ -66,11 +66,11 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-for (int i = 0; i <candidate_count ; i++)
+for (int j = 0; j <candidate_count ; j++)
     {
-        if (strcmp(candidates[i].name,name ) == 0)
+        if (strcmp(candidates[j].name,name ) == 0)
         {
-            candidates.votes[i]=candidates.votes[i]+1
+            candidates.votes[j]=candidates.votes[j]+1
 
             return 0;
         }
