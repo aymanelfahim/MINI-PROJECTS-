@@ -68,10 +68,10 @@ bool vote(string name)
 
 
 {
-for (int j = 0; j <candidate_count ; j++)
+for (int j = 0;  ;j < candidate_count ; j++)
 {
-while (candidates[j]!=condidates[candidate_count-j]
-{
+
+
 
     {
         if (strcmp(candidates[j].name,name ) == 0)
@@ -82,7 +82,7 @@ while (candidates[j]!=condidates[candidate_count-j]
 
         }
         return false;
-    }
+
 }
 
 
@@ -94,10 +94,17 @@ void print_winner(void)
 {
     if (candidates.votes[j]<candidates.votes[j+1])
     {
-        c=candidates.votes[j+1]
-    }
+        winner=candidates.name[j+1];
 
+    }
+    else if ( candidates.votes[j]>candidates.votes[j+1])
+    {
+     winner=candidates.name[j];
+    }
+    print_winner("winner is",winner);
 
 }
     return;
+}
+}
 }
