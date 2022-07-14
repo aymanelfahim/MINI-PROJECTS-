@@ -96,10 +96,9 @@ void print_winner(void)
             winner = candidates[g].votes;
             win = candidates[g].name;
         }
-        win = candidates[g-1].name;
 
-        }
+    }
 
+return win;
 
-    printf("the winner is",win);
 }
