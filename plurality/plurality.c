@@ -95,9 +95,10 @@ void print_winner(void)
         {
             winner = candidates[g].votes;
             win = candidates[g].name;
-            
+
         }
         else
+        
 
     }
 
