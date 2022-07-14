@@ -100,5 +100,5 @@ void print_winner(void)
         }
 
 
-    return (win);
+    printf("the winner is",win);
 }
