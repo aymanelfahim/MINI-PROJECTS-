@@ -61,11 +61,11 @@ int main(int argc, string argv[])
 
     // Display winner of election
     print_winner();
-}
+
 
 // Update vote totals given a new vote
 bool vote(string name)
-{
+
     candidate_count = argc - 1;
     for (int j = 0;  ;j < candidate_count ; j++)
     {
