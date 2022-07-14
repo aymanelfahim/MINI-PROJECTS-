@@ -91,7 +91,7 @@ void print_winner(void)
     string win = 0;
     for (int g = 0; g < candidate_count ; g++)
     {
-        if (winner<=candidates[g].votes)
+        if (winner<candidates[g].votes)
         {
             winner = candidates[g].votes;
             win = candidates[g].name;
