@@ -93,6 +93,9 @@ while (candidates[j]!=condidates[candidate_count-j]
 void print_winner(void)
 {
     if (candidates.votes[j]<candidates.votes[j+1])
+    {
+        c=candidates.votes[j+1]
+    }
 
 
 }
