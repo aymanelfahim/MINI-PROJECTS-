@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 // Max voters and candidates
 #define MAX_VOTERS 100
@@ -143,7 +144,7 @@ bool vote(int voter, int rank, string name)
 }
 
 
-    return ;
+  
 
 
 // Tabulate votes for non-eliminated candidates
@@ -223,9 +224,10 @@ void eliminate(int min)
 {
     for (int i = 0; i < candidate_count ; i++)
     {
-    if candidate[i].votes=min;
+    if (candidate[i].votes=min;)
+    candidates[i].eliminated = true;
 
     // TODO
-    return;
+    return true
 }
 }
