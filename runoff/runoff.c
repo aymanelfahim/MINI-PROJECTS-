@@ -176,7 +176,7 @@ bool print_winner(void)
     {
         if(candidates[f].votes>(voter_count)/2)
         {
-            printf(" the winner is"candidate[f].name);
+            printf(" the winneri is",candidates[f].name);
             return true;
         }
 
