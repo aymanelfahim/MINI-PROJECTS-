@@ -196,7 +196,7 @@ int find_min(void)
 
     }
 
-    return ;
+    return min;
 }
 
 
