@@ -127,33 +127,59 @@ int main(int argc, string argv[])
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
-     for (int i = 0; i < candidate_count ; i++)
+     for (int k = 0; k < candidate_count ; k++)
       {
-        if (strcmp(candidates[i].name,name ) == 0)
+        if (strcmp(candidates[k].name,name ) == 0)
         {
-        for (int j = 0; j < voters_count ; j++)
-        {
-             preferences[j][i]=candidates [i]
+            for (int f = 0; f < candidate_count ; f++)
+             preferences[voter][rank]=k;
+
+        return true;
         }
 
 
-        }
-
-    }
-
-    return false;
+      }
+        return false;
 }
+
+
+    return ;
+
 
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
-    // TODO
-    return;
-}
+    for (int i = 0; i < voter_count; i++)
+    {
+        for (int j = 0; j < candidate_count; j++)
+        {
+            int preference=preference[i][j];
+            if(!candidates[preference].eliminated)
+            {
+                candidates[preference].votes=+1;
+                break;
+            }
+        }
+    }
 
+
+
+
+    return;
+
+}
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
+    for (int f = 0; f < candidate_count ; f++)
+    {
+        if(candidate[f].votes>vote_count/2)
+        {
+            printf(" the winner is"candidate[f].name);
+            return true;
+        }
+
+    }
     // TODO
     return false;
 }
@@ -161,7 +187,11 @@ bool print_winner(void)
 // Return the minimum number of votes any remaining candidate has
 int find_min(void)
 {
-    // TODO
+    for (int i = 0; i < candidate_count; i++)
+    {
+        
+    }
+
     return 0;
 }
 
