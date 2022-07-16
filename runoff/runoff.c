@@ -188,8 +188,8 @@ bool print_winner(void)
 int find_min(void)
 {
     for (int i = 0; i < candidate_count; i++)
-    {
-        
+    { if(!candidates[preference].eliminated )
+
     }
 
     return 0;
