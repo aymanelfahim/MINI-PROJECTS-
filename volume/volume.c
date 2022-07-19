@@ -34,8 +34,8 @@ int main(int argc, char *argv[])
     float factor = atof(argv[3]);
 
     // TODO: Copy header from input file to output file
-    typedef uint16_t BYTE;
-        FILE *file = fopen(argv[1], "r");
+    typedef uint8_t 44 BYTE;
+        FILE *file = fopen(a
     // TODO: Read samples from input file and write updated data to output file
 
     // Close files
