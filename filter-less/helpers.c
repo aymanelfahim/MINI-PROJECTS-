@@ -11,7 +11,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
             int blue = image[i][j].rgbtBlue ;
             int red = image[i][j].rgbtRed;
             int green = image[i][j].rgbtGreen;
-            int gray = round(blue+red+green/3);
+            int gray = round(blue+red+green/3.00);
         image[i][j].rgbtRed = gray;
         image[i][j].rgbtBlue = gray;
         image[i][j].rgbtGreen = gray;
