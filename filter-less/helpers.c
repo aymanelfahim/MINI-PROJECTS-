@@ -49,6 +49,10 @@ return;
 }
 
 // Reflect image horizontally
+void swap(int a, int b);
+{
+    
+}
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
       for (int i = 0; i < height; i++)
