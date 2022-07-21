@@ -55,6 +55,7 @@ void swap(int a, int b);
     a=b;
     b=tmp;
 }
+void swap(int a, int b);
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
       for (int i = 0; i < height; i++)
