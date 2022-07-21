@@ -39,6 +39,10 @@ if (image[i][j].rgbtBlue>255)
 {
      image[i][j].rgbtBlue=255;
 }
+else
+image[i][j].rgbtGreen=image[i][j].rgbtGreen;
+image[i][j].rgbtBlue=image[i][j].rgbtBlue;
+image[i][j].rgbtRed=image[i][j].rgbtRed;
 
 
 
