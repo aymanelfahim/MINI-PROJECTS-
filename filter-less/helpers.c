@@ -50,28 +50,27 @@ return;
 
 // Reflect image horizontally
 
-void swap(int *a, int *b);
+
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
       for (int i = 0; i < height; i++)
       {
           for (int j = 0; j < round(width*0.5); j++)
           {
-            swap(image[i][j].rgbtBlue, image[i][width-j].rgbtBlue);
-             swap(image[i][j].rgbtRed,image[i][width-j].rgbtRed);
-              swap(image[i][j].rgbtGreen,image[i][width-j].rgbtGreen);
-
+            int red=image[i][j].rgbtRed;
+            image[i][j].rgbtRed=image[i][width-j].rgbtRed;
+            image[i][width-j].rgbtRed=red;
+             int green=image[i][j].rgbtGreen;
+            image[i][j].rgbtGreen=image[i][width-j].rgbtGreen;
+            image[i][width-j].rgbtGreen=green;
+             int blue=image[i][j].rgbtBlue;
+            image[i][j].rgbtBlue=image[i][width-j].rgbtBlue;
+            image[i][width-j].rgbtBlue=blue;
 
           }
       }
 
     return;
-}
-void swap(int *a, int *b)
-{
-    int tmp=*a;
-    *a=*b;
-    *b=tmp;
 }
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
