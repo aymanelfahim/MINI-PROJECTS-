@@ -73,7 +73,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     return;
 }
 // Blur image
-void average()
+void average(int a , int b , int c )
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
      for (int i = 0; i < height; i++)
@@ -84,4 +84,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
          }
      }
     return;
+}
+void average(int a , int b , int c )
+{
+    average=
 }
