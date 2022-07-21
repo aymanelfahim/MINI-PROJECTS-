@@ -58,7 +58,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
           for (int j = 0; j < round(width*0.5); j++)
           {
             int red=image[i][j].rgbtRed;
-            image[i][j].rgbtRed=image[i][width-j].rgbtRed;
+            |=image[i][width-j].rgbtRed;
             image[i][width-j].rgbtRed=red;
              int green=image[i][j].rgbtGreen;
             image[i][j].rgbtGreen=image[i][width-j].rgbtGreen;
@@ -80,7 +80,10 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
      {
          for (int j = 0; j < height; j++)
          {
-            if( i = 0)
+            if( i = 0 && j=0)
+            {
+                image[i][j].rgbtRed=average(image[i+1][j].rgbtRed ,image[i][j].rgbtRed)
+            }
 
          }
      }
