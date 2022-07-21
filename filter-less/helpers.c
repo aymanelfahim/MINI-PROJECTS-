@@ -42,12 +42,11 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 image[i][j].rgbtRed=red;
 image[i][j].rgbtGreen=green;
 image[i][j].rgbtBlue=blue;
-    return;
 }
 
     }
 
-
+return;
 }
 
 // Reflect image horizontally
