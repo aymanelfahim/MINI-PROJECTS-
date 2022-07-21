@@ -85,7 +85,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
      }
     return;
 }
-void average(int a , int b , int c )
+int average(int a , int b , int c )
 {
-    average=
+    int average=round((a+b+c)/3 )
+    return average;
 }
