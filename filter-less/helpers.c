@@ -49,12 +49,7 @@ return;
 }
 
 // Reflect image horizontally
-void swap(int a, int b);
-{
-    tmp=a;
-    a=b;
-    b=tmp;
-}
+
 void swap(int a, int b);
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
@@ -71,6 +66,12 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
       }
 
     return;
+}
+void swap(int a, int b)
+{
+    int tmp=a;
+    a=b;
+    b=tmp;
 }
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
