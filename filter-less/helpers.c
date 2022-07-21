@@ -22,9 +22,12 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
     int limit(int rgb)
     {
-        rgb>255;
+        if (rgb>255);
+        {
         rgb=255
 
+    }
+    return rgb;
     }
     for (int i = 0; i < height; i++)
     {
