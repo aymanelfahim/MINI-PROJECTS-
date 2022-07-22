@@ -58,7 +58,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
           for (int j = 0; j < round(width*0.5); j++)
           {
             int red=image[i][j].rgbtRed;
-            |=image[i][width-j].rgbtRed;
+            image[i][j].rgbtRed=image[i][width-j].rgbtRed;
             image[i][width-j].rgbtRed=red;
              int green=image[i][j].rgbtGreen;
             image[i][j].rgbtGreen=image[i][width-j].rgbtGreen;
@@ -72,25 +72,62 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 
     return;
 }
-// Blur image
-void average(int a , int b , int c )
+int getblur ( int i ,int j,int height,int width, RGBTRIPLE image[height][width],int colorposition);
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    RGBTRIPLE copy[height][width];
      for (int i = 0; i < height; i++)
      {
          for (int j = 0; j < height; j++)
          {
-            if( i = 0 && j=0)
-            {
-                image[i][j].rgbtRed=average(image[i+1][j].rgbtRed ,image[i][j].rgbtRed)
-            }
-
+            copy [i][j]=image[i][j];
          }
      }
+            for (int i=0;i<height;i++)
+            {
+                for(int j=0 ; j<width;j++)
+                {
+            image[i][j].rgbtRed = getblur(i, j, height, width, copy, 0);
+            image[i][j].rgbtGreen = getblur(i, j, height, width, copy, 1);
+            image[i][j].rgbtBlue = getblur(i, j, height, width, copy, 2);
+                }
+            }
+
+
+
+
+
     return;
 }
-int average(int a , int b , int c )
+int getblur ( int i ,int j,int height,int width, RGBTRIPLE image[height][width],int colorposition)
 {
-    int average=round((a+b+c)/3 )
-    return average;
-}
+    int sum =0;
+    int counter = 0;
+     for (int k = i-1; k < i+2; k++)
+    {
+        for (int l = j-1; l < j+2; l++)
+        {
+            if ( k < 0 || l < 0 || k >= height || l >= width)
+            {
+                continue;
+
+
+        }
+        if (colorposition == 0)
+            {
+                sum += image[k][l].rgbtRed;
+            }
+            else if (colorposition == 1)
+            {
+                sum += image[k][l].rgbtGreen;
+            }
+            else
+            {
+                sum += image[k][l].rgbtBlue;
+            }
+            counter++;
+
+        }
+    }
+    return round(sum/counter);
+    }
