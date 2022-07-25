@@ -123,7 +123,7 @@ char random_allele()
     if (r == 0)
     {
         return 'A';
-    }
+        }
     else if (r == 1)
     {
         return 'B';
