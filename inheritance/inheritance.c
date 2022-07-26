@@ -64,6 +64,9 @@ person *create_family(int generations)
 
 
         // TODO: Randomly assign alleles
+        new->alleles[0]=random_alleles()
+        new->alleles[1]=random_alleles()
+
 
     }
 
