@@ -39,7 +39,7 @@ int main(void)
 // Create a new individual with `generations`
 person *create_family(int generations)
 {
-    person*
+    person*tree= NULL;
 
     // If there are still generations left to create
     if (generations > 1)
