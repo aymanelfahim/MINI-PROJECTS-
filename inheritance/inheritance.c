@@ -45,8 +45,8 @@ person *create_family(int generations)
     if (generations > 1)
     {
         // Create two new parents for current person by recursively calling create_family
-        person *parent[0] = create_family(generations - 1);
-        person *parent[1] = create_family(generations - 1);
+        new->parent[0] = create_family(generations - 1);
+        new ->parent[1] = create_family(generations - 1);
         new->alleles[0]=random_allele(new->parents[0]);
         new->alleles[1]=random_allele(new->parents[1]);
 
