@@ -41,7 +41,7 @@ if (fopen=NULL)
 {
     return false;
 }
-while (fscanf( ))
+while (fscanf(file,%s, ))
     return false;
 }
 
