@@ -74,7 +74,7 @@ while (fscanf(file,%s,ayman )=!EOF)
     }
     strcpy(n->word,ayman);
     unsigned int index=hash(ayman);
-    if (table[index]=!NULL)
+    if (table[index]!=NULL)
     {
 
         n->next=table[index];
