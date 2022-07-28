@@ -5,7 +5,7 @@
 
 #include "dictionary.h"
 #include <string.h>
-
+int size = 0;
 // Represents a node in a hash table
 typedef struct node
 {
@@ -69,13 +69,14 @@ while (fscanf(file,%s,ayman )=!EOF)
     }
      table[index]=n;
 
+        size=size+1;
 }
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
-    // TODO
+    
     return 0;
 }
 
