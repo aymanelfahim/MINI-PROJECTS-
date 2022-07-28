@@ -31,7 +31,7 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     int index = 0;
-    for (int i = 0; i < strlen(word); i++)
+    for (int i = 0; i < 2; i++)
     {
     index=index+toupper(word[i])-65
     // TODO: Improve this hash function
