@@ -15,7 +15,7 @@ typedef struct node
 node;
 
 // TODO: Choose number of buckets in hash table
-int size = 0;
+int sizy = 0;
 const unsigned int N = 17577;
 
 // Hash table
@@ -24,7 +24,7 @@ node *table[N];
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-    int s =hash(word)
+    int s =hash(word);
 for(node*tmp=table[s];tmp=!NULL;tmp=tmp->next )
 {
      if (strcasecmp(word, tmp) == 0)
@@ -47,7 +47,7 @@ unsigned int hash(const char *word)
     int index = 0;
     for (int i = 0; i < 2; i++)
     {
-    index=index+toupper(word[i])-65
+    index=index+toupper(word[i])-65;
     // TODO: Improve this hash function
 
     return index;
@@ -95,7 +95,7 @@ unsigned int size(void)
         return 0
     }
 
-    return size;
+    return sizy;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
