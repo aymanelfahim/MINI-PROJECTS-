@@ -27,7 +27,10 @@ bool check(const char *word)
     int s =hash(word)
 for(node*tmp=table;tmp=!NULL;tmp=tmp->next )
 {
-    if tmp=
+    if (hash(tmp)=word)
+    {
+        return 
+    }
 }
 
 
