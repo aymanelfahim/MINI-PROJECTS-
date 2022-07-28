@@ -30,7 +30,7 @@ bool check(const char *word)
     int s =hash(word);
 for(node*tmp=table[s];tmp!=NULL;tmp=tmp->next )
 {
-     if (strcasecmp(word, tmp) == 0)
+     if (strcasecmp(word, tmp->) == 0)
 
     {
         return true;
