@@ -4,6 +4,7 @@
 #include <stdbool.h>
 
 #include "dictionary.h"
+#include <string.h>
 
 // Represents a node in a hash table
 typedef struct node
@@ -30,10 +31,13 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     int index = 0;
-    for (int i = 0; i < lengthword; i++)
+    for (int i = 0; i < strlen(word); i++)
+    {
+    index=index+word[i]
     // TODO: Improve this hash function
 
-    return
+    return index-65*
+}
 }
 
 // Loads dictionary into memory, returning true if successful, else false
