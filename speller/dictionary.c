@@ -76,8 +76,12 @@ while (fscanf(file,%s,ayman )=!EOF)
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
-    
-    return 0;
+    if (load(dictionary)=NULL)
+    {
+        return 0
+    }
+
+    return size;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
