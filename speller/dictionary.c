@@ -36,7 +36,7 @@ unsigned int hash(const char *word)
     index=index+word[i]
     // TODO: Improve this hash function
 
-    return index-65*
+    return index-65*strlen(word)
 }
 }
 
