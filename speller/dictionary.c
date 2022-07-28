@@ -93,9 +93,9 @@ while (fscanf(file,%s,ayman )=!EOF)
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
-    if (load(dictionary)=NULL)
+    if (load(dictionary)==NULL)
     {
-        return 0
+        return 0;
     }
 
     return sizy;
@@ -106,7 +106,7 @@ bool unload(void)
 {
     for (int i = 0; i < N; i++)
     {
-        node*cursor=table[i]
+        node*cursor=table[i];
         while(cursor=!NULL)
         {
             node *tmp=cursor;
