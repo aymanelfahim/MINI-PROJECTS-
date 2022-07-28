@@ -107,8 +107,8 @@ bool unload(void)
         while(cursor=!NULL)
         {
             node *tmp=cursor;
+            free(tmp);
             cursor=cursor->next;
-            free(tmp)
             tmp=cursor;
         }
     }
