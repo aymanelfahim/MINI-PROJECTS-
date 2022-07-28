@@ -104,6 +104,10 @@ bool unload(void)
     for (int i = 0; i < N; i++)
     {
         node*cursor=table[i]
+        while(cursor=!NULL)
+        {
+            
+        }
     }
     // TODO
     return false;
