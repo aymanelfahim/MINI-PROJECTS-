@@ -38,7 +38,7 @@ for(node*tmp=table[s];tmp=!NULL;tmp=tmp->next )
 
 
     // TODO
-    return false;
+    
 }
 
 // Hashes word to a number
