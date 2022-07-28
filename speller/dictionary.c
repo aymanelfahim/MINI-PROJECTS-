@@ -33,10 +33,10 @@ unsigned int hash(const char *word)
     int index = 0;
     for (int i = 0; i < strlen(word); i++)
     {
-    index=index+word[i]-65
+    index=index+toupper(word[i])-65
     // TODO: Improve this hash function
 
-    return index-65*strlen(word)
+    return index;
 }
 }
 
