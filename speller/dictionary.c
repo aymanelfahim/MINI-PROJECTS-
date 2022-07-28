@@ -30,7 +30,7 @@ bool check(const char *word)
     int s =hash(word);
 for(node*tmp=table[s];tmp!=NULL;tmp=tmp->next )
 {
-     if (strcasecmp(word, tmp->) == 0)
+     if (strcasecmp(word, tmp->word) == 0)
 
     {
         return true;
@@ -73,7 +73,7 @@ while (fscanf(file,%s,ayman )=!EOF)
         return 1;
     }
     strcpy(n->word,ayman);
-    unsigned int index=hash(ayman)
+    unsigned int index=hash(ayman);
     if (table[index]=!NULL)
     {
 
