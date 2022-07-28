@@ -38,7 +38,7 @@ for(node*tmp=table[s];tmp=!NULL;tmp=tmp->next )
 
 
     // TODO
-    
+
 }
 
 // Hashes word to a number
@@ -101,6 +101,8 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
+    for (int i = 0; i < N; i++)
+
     // TODO
     return false;
 }
