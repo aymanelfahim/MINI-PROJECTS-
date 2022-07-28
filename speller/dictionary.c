@@ -25,10 +25,11 @@ node *table[N];
 bool check(const char *word)
 {
     int s =hash(word)
-    if table[s]=NULL
-    {
-        
-    }
+for(node*tmp=table;tmp=!NULL;tmp=tmp->next )
+{
+    
+}
+
 
     // TODO
     return false;
