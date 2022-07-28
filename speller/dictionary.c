@@ -41,8 +41,28 @@ if (fopen=NULL)
 {
     return false;
 }
-while (fscanf(file,%s, ))
-    return false;
+while (fscanf(file,%s,ayman )=!EOF)
+{
+    node *n = malloc(sizeof(node));
+    if(n==NULL)
+    {
+        return 1;
+    }
+    strcpy(n->word,ayman);
+    unsigned int index=hash(ayman)
+    if (table[index]=!NULL)
+    {
+
+        n->next=table[index];
+    }
+    else
+    {
+        n->next=NULL;
+
+    }
+     table[index]=n;
+
+}
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
