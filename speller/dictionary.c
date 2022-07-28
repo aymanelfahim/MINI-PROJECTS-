@@ -28,12 +28,12 @@ node *table[N];
 bool check(const char *word)
 {
     int s =hash(word);
-for(node*tmp=table[s];tmp=!NULL;tmp=tmp->next )
+for(node*tmp=table[s];tmp!=NULL;tmp=tmp->next )
 {
      if (strcasecmp(word, tmp) == 0)
 
     {
-        return TRUE;
+        return true;
     }
     return false;
 }
@@ -60,7 +60,7 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
-FILE *file = fopen("dictionary.h" ,"r")
+FILE *file = fopen("dictionary.h" ,"r");
 if (fopen=NULL)
 {
     return false;
@@ -86,17 +86,13 @@ while (fscanf(file,%s,ayman )=!EOF)
     }
      table[index]=n;
 
-        size=size+1;
+        sizy=sizy+1;
 }
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
-    if (load(dictionary)==NULL)
-    {
-        return 0;
-    }
 
     return sizy;
 }
@@ -107,7 +103,7 @@ bool unload(void)
     for (int i = 0; i < N; i++)
     {
         node*cursor=table[i];
-        while(cursor=!NULL)
+        while(cursor!=NULL)
         {
             node *tmp=cursor;
             free(tmp);
