@@ -5,7 +5,7 @@
 
 #include "dictionary.h"
 #include <string.h>
-int size = 0;
+
 // Represents a node in a hash table
 typedef struct node
 {
@@ -15,6 +15,7 @@ typedef struct node
 node;
 
 // TODO: Choose number of buckets in hash table
+int size = 0;
 const unsigned int N = 17577;
 
 // Hash table
