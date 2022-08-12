@@ -16,6 +16,16 @@ def main():
 
     teams = []
     # TODO: Read teams into memory from file
+    filename=sys.argv[1]
+    with open("2018m.csv", "a") as f:
+
+        reader=csv.DictReader(f)
+        for team in reader:
+            team["rating"]=int(team["rating"])
+            teams.append(team)
+
+
+
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
