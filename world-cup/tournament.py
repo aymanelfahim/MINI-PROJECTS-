@@ -17,13 +17,16 @@ def main():
     teams = []
     # TODO: Read teams into memory from file
     filename=sys.argv[1]
-    with open("2018m.csv", "a") as f:
+    with open("filename", "a") as f:
 
         reader=csv.DictReader(f)
         for team in reader:
             team["rating"]=int(team["rating"])
             teams.append(team)
-            
+            for i in range (N)
+            simulate_tournament()
+
+
 
 
 
