@@ -58,6 +58,12 @@ def simulate_round(teams):
 
 def simulate_tournament(teams):
     """Simulate a tournament. Return name of winning team."""
+    for i in range (len(teams)/2):
+        winner =simulate_round(teams)
+        if len(teams)/2=1:
+            break
+
+
     # TODO
 
 
