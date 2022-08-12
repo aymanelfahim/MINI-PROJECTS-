@@ -17,21 +17,17 @@ def main():
     teams = []
     # TODO: Read teams into memory from file
     filename=sys.argv[1]
-    with open("filename", "a") as f:
+    with open(filename) as f:
 
         reader=csv.DictReader(f)
         for team in reader:
             team["rating"]=int(team["rating"])
             teams.append(team)
-            for i in range (N)
-            simulate_tournament()
-
-
-
-
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
+    for i in range (N):
+        winner=simulate_tournament(teams)
 
     # Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
