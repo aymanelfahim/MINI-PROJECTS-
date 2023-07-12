@@ -1,5 +1,6 @@
 def main():
-    ...
+    ...n=input("mealtime")
+        if <convert(n)<
 
 
 def convert(time):
