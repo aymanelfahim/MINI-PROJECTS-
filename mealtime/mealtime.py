@@ -1,5 +1,5 @@
 def main():
-    ...n=input("mealtime")
+        n=input("mealtime")
         if 7<=convert(n)<=8 :
             print("break time")
         elif 12<=convert(n)<=13:
@@ -8,7 +8,7 @@ def main():
 
 
 def convert(time):
-    ... x,y=time.split(":")
+         x,y=time.split(":")
         y=float(y)/60
         return y+float(x)
 
