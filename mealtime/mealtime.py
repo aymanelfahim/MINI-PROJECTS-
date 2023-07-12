@@ -8,7 +8,7 @@ def main():
 
 
 def convert(time):
-         x,y=time.split(":")
+        x,y=time.split(":")
         y=float(y)/60
         return y+float(x)
 
