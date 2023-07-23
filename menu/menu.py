@@ -8,4 +8,5 @@ def main()
 
 
 
-def check(n)
+def check(D,n):
+    
