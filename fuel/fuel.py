@@ -3,10 +3,6 @@ while True:
         operat=input("fraction:")
         a=int(operat[0])
         b=int(operat[2])
-    except  ValueError :
-        pass
-    else :
-        break
 c=(a/b)*100
 if c==99:
     print("F")
