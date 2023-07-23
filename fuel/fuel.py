@@ -7,7 +7,7 @@ while True:
         pass
     else :
         break
-c=rounda/b)*100
+c=(a/b)*100
 if c==99:
     print("F")
 elif c==1:
