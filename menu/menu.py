@@ -12,7 +12,7 @@ def main()
 }
 
     check(D,item)
-    
+
     while
 
 
@@ -27,5 +27,6 @@ def check(D,n):
             n=input("item")
         except KeyError:
             pass
+        
         else:
             break
