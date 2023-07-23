@@ -9,4 +9,5 @@ def main()
 
 
 def check(D,n):
-    
+    while True:
+        
