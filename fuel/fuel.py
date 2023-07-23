@@ -3,7 +3,7 @@ while True:
         operat=input("fraction:")
         a=int(operat[0])
         b=int(operat[2])
-    except  ValueError or  ZeroDivisionError:
+    except  ValueError :
         pass
     else :
         break
