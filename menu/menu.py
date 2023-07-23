@@ -27,6 +27,5 @@ def check(D,n):
             n=input("item")
         except KeyError:
             pass
-        
-        else:
+        elif:
             break
