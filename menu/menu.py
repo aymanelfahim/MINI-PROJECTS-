@@ -22,4 +22,8 @@ def main()
 def check(D,n):
     while True:
         try:
-            n=input("n")
+            n=input("item")
+        except KeyError:
+            pass
+        else:
+            break
