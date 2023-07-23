@@ -3,7 +3,11 @@ while True:
         operat=input("fraction:")
         a=int(operat[0])
         b=int(operat[2])
-c=(a/b)*100
+    except  ValueError or  ZeroDivisionError:
+        pass
+    else :
+        break
+c=round(a/b)*100
 if c==99:
     print("F")
 elif c==1:
