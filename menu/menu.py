@@ -12,6 +12,7 @@ def main()
 }
 
     check(D,item)
+    while 
 
 
 
