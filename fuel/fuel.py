@@ -1,12 +1,13 @@
 while True:
     try:
-        operat=input("fraction:")
-        
+        operat=input("fraction:").split("/")
+        a,b=int(operat[0]),int(operat[1])
+
     except  ValueError or  ZeroDivisionError:
         pass
     else :
         break
-c=round(a/b)*100
+c=rounda/b)*100
 if c==99:
     print("F")
 elif c==1:
