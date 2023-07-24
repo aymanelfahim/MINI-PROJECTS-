@@ -9,21 +9,10 @@ menu={
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-
-    check(menu,item))
-
-
-
-
-
-
-
-
-def check(D,n):
     while True:
         total=0
         try:
-            n=input("item")
+            item=input("item")
         except KeyError:
             pass
         except EOFError:
