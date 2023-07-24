@@ -13,7 +13,6 @@ def main()
 
     check(D,item)
 
-    while
 
 
 
@@ -23,6 +22,7 @@ def main()
 
 def check(D,n):
     while True:
+        total=0
         try:
             n=input("item")
         except KeyError:
@@ -30,6 +30,7 @@ def check(D,n):
         except EOFError:
             break
         else:
-            continue
+            total=total+input
+    print(total)
 
 
