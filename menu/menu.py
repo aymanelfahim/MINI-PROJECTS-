@@ -29,7 +29,7 @@ def check(D,n):
         except EOFError:
             break
         else:
-            total=total+input
+            total=total+int(D[input])
     print(total)
 
 
