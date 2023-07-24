@@ -9,8 +9,8 @@ menu={
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+total=0
     while True:
-        total=0
         try:
             item=input("item")
         except KeyError:
