@@ -10,15 +10,15 @@ menu={
     "Tortilla Salad": 8.00
 }
 total=0
-    while True:
-        try:
+while True:
+    try:
             item=input("item")
-        except KeyError:
+    except KeyError:
             pass
-        except EOFError:
+    except EOFError:
             break
-        else:
-            total=total+int(D[input])
+    else:
+            total=total+int(menu[input])
             print("total:",total)
     print("total",total)
 
