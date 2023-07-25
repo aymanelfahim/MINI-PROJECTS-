@@ -18,8 +18,8 @@ while True:
     except EOFError:
             break
     else:
-            total=total+menu[item]
-            print("total:",total)
+        total=total+menu[item]
+        print("total:",total)
 
 
 
