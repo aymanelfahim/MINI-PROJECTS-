@@ -13,13 +13,13 @@ total=0
 while True:
     try:
             item=input("item")
+            total=total+menu[item]
+            print("total:",total)
     except KeyError:
             pass
     except EOFError:
             break
-    else:
-        total=total+menu[item]
-        print("total:",total)
+    
 
 
 
