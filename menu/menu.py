@@ -18,8 +18,9 @@ while True:
     except EOFError:
             break
     else:
-            total=total+int(menu[input])
             print("total:",total)
-    print("total",total)
+            total=total+int(menu[input])
+
+
 
 
