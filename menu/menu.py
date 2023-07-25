@@ -19,6 +19,7 @@ total=0
             break
         else:
             total=total+int(D[input])
-    print(total)
+            print("total:",total)
+    print("total",total)
 
 
