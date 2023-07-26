@@ -19,9 +19,11 @@ while True:
         if "/" in date:
             L=date.split("/")
             print(L[1]+"/"+L[0]+"/"+L[2])
+            break
         else:
             M=date.replace(",", "").split()
             print(M[1]+"/"+months.index(M[0])+"/"+M[2])
+            break
 
     except KeyError:
         pass
