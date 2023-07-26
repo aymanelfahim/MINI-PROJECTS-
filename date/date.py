@@ -21,6 +21,7 @@ while True:
             L=date.split(/)
             print(L[1]+"/"+L[0]+"/"+L[2])
         else:
+            M=date.replace(",",("")).split()
             
 
 
