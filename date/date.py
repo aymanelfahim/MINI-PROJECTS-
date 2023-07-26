@@ -20,7 +20,7 @@ while True:
             L=date.split("/")
             print(L[1]+"/"+L[0]+"/"+L[2])
         else:
-            M=date.replace(",","").split()
+            M=date.replace(",", "").split()
             print(M[1]+"/"+months.index(M[0])+"/"+M[2])
 
     except KeyError:
