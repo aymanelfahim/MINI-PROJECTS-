@@ -12,8 +12,10 @@ months=[
     "November",
     "December"
 ]
+
 while True:
     try:
-        dat
-        if input
+        date=input("date")
+        if "/" in date:
+            da
 
