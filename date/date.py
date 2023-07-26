@@ -17,7 +17,10 @@ while True:
     try:
         date=input("date")
         if "/" in date:
+            try:
             L=date.split(/)
             print(L[1]+"/"+L[0]+"/"+L[2])
+        else:
             
+
 
