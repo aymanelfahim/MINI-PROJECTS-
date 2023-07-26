@@ -25,6 +25,6 @@ while True:
             print(M[1]+"/"+months.index(M[0])+"/"+M[2])
             break
 
-    except KeyError:
+    except KeyError or ValueError:
         pass
 
