@@ -22,9 +22,10 @@ while True:
             break
         else:
             M=date.replace(",", "").split()
-            print(M[1]+"/"+months.index(M[0])+"/"+M[2])
-            break
+            try:
 
-    except KeyError or ValueError:
-        pass
+                print(M[1]+"/"+months.index(M[0])+"/"+M[2])
+                break
+
+
 
