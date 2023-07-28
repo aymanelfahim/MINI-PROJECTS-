@@ -1,3 +1,13 @@
-import requests
-response = requests.get(https:/carpedm20.github.io/emoji/all.html?enableList=enable_list_alias)
-                        print(response)
+import emoji
+def main():
+    emojize()
+
+
+def emojize():
+    user_input = input("Input: ")
+    print(emoji.emojize(user_input))
+
+
+if __name__ == "__main__":
+    main()
+
