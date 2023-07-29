@@ -6,7 +6,7 @@ def main():
             inp=input("input: ")
             print("output: " ,pfg.figlet_format(inp,font=sys.argv[2]))
         else:
-            sys.exit
+            sys.exit("faute technique ")
 
 
 
