@@ -7,6 +7,8 @@ def main():
             print("output: " ,pfg.figlet_format(inp,font=sys.argv[2]))
         else:
             sys.exit("faute technique ")
+    elif:
+
 
 
 
