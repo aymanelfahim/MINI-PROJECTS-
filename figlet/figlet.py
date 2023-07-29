@@ -7,9 +7,11 @@ def main():
             print("output: " ,pfg.figlet_format(inp,font=sys.argv[2]))
         else:
             sys.exit("faute technique ")
-    else:
+    elif len(sys.argv)==1:
         inp=input("input: ")
         print("output: ", pfg.figlet_format(inp,))
+    else:
+        print("nvalid")
 
 
 
