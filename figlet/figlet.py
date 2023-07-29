@@ -1,7 +1,7 @@
 import pyfiglet as pfg
 import sys
 def main():
-    if 
+    if len(sys.argv)=
 
 
 
