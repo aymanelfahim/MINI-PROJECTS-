@@ -10,3 +10,4 @@ def mhi(s):
                     del(L[j])
 
     return L
+mhi("dhdhdhddd")
