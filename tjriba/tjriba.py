@@ -3,11 +3,11 @@ def mhi(s):
     L=[]
     for k in s:
         L+=[k]
-    for i in range(len(L)):
+    for i in range(1,len(L)-1):
         for j in range(i):
-            while i!=j:
                 if L[j]==L[i]:
                     del(L[j])
 
     return L
-mhi("dhdhdhddd")
+n=input("donner :")
+print(mhi(n))
