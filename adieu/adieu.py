@@ -4,9 +4,10 @@ def main():
         try:
             n=input("Name: ")
         except EOFError:
+            print("adieu,adieu",S)
             break
         else:
             S=S+n
-            print("adieu,adieu",S)
+
 main()
 
