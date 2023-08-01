@@ -1,3 +1,4 @@
+import inflect
 def main():
     S=""
     while True:
@@ -8,6 +9,9 @@ def main():
             break
         else:
             S=S+","+n
+        M=S.split(",")
+        M=
+
 
 
 main()
