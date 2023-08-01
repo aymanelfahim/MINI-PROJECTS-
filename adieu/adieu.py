@@ -1,14 +1,14 @@
 import inflect
-S=""
+S=[]
 while True:
     try:
         n=input("Name: ")
     except EOFError:
-        print("adieu,adieu to ",inflect.join(M))
+        print("adieu,adieu to ",inflect.join(S))
         break
     else:
-        S=S+","+n
-        M=S.split(",")
+        S=S+[n]
+
 
 
 
