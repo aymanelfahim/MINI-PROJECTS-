@@ -6,5 +6,7 @@ def main():
         except EOFError:
             break
         else:
-            print("adieu,adieu",S+n)
+            S=S+n
+            print("adieu,adieu",S)
+main()
 
