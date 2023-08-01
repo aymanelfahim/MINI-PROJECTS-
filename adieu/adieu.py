@@ -7,7 +7,8 @@ def main():
             print("adieu,adieu to ",S)
             break
         else:
-            S=S+n
+            S=S+","+n
+
 
 main()
 
