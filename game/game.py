@@ -15,6 +15,7 @@ def main():
                     print("too small),try again")
                 else:
                     print("just right")
+                    break
 
 def get():
     while True:
