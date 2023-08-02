@@ -1,7 +1,6 @@
 import random
 def main():
-    n=get(n)
-    a=random.randrange(1, n)
+    a=random.randrange(1, get(n) )
     while True:
         k=int(input("donner un nombre:"))
         if k>0:
