@@ -18,10 +18,13 @@ def main():
 
 def get():
     while True:
-      n=int(input("doner n: "))
-      if n>0:
-        break
-    return n
+      try:
+        n=int(input("doner n: "))
+      except ValueError:
+        continue
+      else:
+          if n>0:
+              return n
 if __name__ == "__main__":
     main()
 
