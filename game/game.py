@@ -1,35 +1,26 @@
 import random
 def main():
     n=get(n)
-
-
-
-
-
-
-
-
-
-
-
-
-
- def get(n):
-    while True:
-      n=int(input("doner n: "))
-      if n>0:
-        break
-    return n
-
     a=random.randrange(1, n)
     while True:
         k=int(input("donner un nombre:"))
         if k>0:
            if k>a:
-              print("too larg, try again ")
+
+            print("too larg, try again ")
             elif k<a:
-              print("too small),try again")
+                print("too small),try again")
             else:
                 print("just right")
+
+def get(n):
+    while True:
+      n=int(input("doner n: "))
+      if n>0:
+        break
+    return n
+main()
+
+
 
 
