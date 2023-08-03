@@ -1,5 +1,6 @@
 def main():
-    ...
+    n=input("donner un mot")
+    shorten(n)
 
 
 def shorten(word):
