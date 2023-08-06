@@ -7,7 +7,6 @@ def main():
         except ValueError:
             continue
         else:
-
             if k>0:
                 if k>a:
                     print("too larg, try again ")
@@ -16,7 +15,6 @@ def main():
                 else:
                     print("just right")
                     break
-
 def get():
     while True:
       try:

@@ -2,7 +2,7 @@ import sys
 def main():
     if getparametre(sys.argv):
           A=getlist(sys.argv[1])
-          count(A)
+          print(count(A))
 
 
 
