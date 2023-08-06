@@ -10,5 +10,16 @@ def getparametre()
         if "py" not in sys.argv[1]:
             print("not a python file")
         else:
-            with open("sys.argv[1]") as file:
-                
+            try:
+                 L=open("sys.argv[1]")
+
+            except FileNotFoundError:
+                print("file not found")
+            else:
+                count(lines)
+ def count(M):
+    S=0
+    for i in M:
+        if i[0]="#" or i=" "
+
+
