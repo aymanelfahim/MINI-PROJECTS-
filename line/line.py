@@ -1,7 +1,7 @@
 import sys
 def main():
     if getparametre(sys.argv):
-          S=open(sys.argv[1])
+          S=open("sys.argv[1]")
           X=S.readlines()
           count(X)
 
