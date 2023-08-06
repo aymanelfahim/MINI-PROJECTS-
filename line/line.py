@@ -10,3 +10,5 @@ def getparametre()
         if "py" not in sys.argv[1]:
             print("not a python file")
         else:
+            with open("sys.argv[1]") as file:
+                
