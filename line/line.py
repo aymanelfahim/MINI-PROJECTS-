@@ -1,9 +1,8 @@
 import sys
 def main():
     if getparametre(sys.argv):
-          S=open(sys.argv[1])
-          X=S.readlines()
-          count(X)
+          A=open(sys.argv[1])
+          count(A)
 
 
 
@@ -21,7 +20,9 @@ def getparametre(K):
 def count(M):
     S=0
     for i in M:
-         i=i.str
+         i=i.strip()
+         if len(i)!=0:
+              S=S+1
     return S
 
 def open(file):
