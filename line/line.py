@@ -1,7 +1,7 @@
 import sys
 def main():
     if getparametre(sys.argv):
-          S=open("sys.argv[1]")
+          S=open(sys.argv[1])
           X=S.readlines()
           count(X)
 
@@ -20,7 +20,7 @@ def getparametre(K):
     return True
 def count(M):
     S=0
-    for i in M:
+    M
         if i[0]=="#" or i[0]==" ":
             continue
         S=S+1
@@ -28,7 +28,7 @@ def count(M):
 
 def open(file):
     try:
-                 L=open("file")
+                 L=open(file)
 
     except FileNotFoundError:
                 print("file not found")
