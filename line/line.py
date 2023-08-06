@@ -25,7 +25,7 @@ def count(M):
               S=S+1
     return S
 
-def open(file):
+def getlist(file):
     try:
         f=open(file)
         L=f.readlines()
