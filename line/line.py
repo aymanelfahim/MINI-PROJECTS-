@@ -20,16 +20,20 @@ def getparametre(K):
     return True
 def count(M):
     S=0
+    for i in M:
+         
     return S
 
 def open(file):
     try:
-        L=open(file)
+        f=open(file)
+        L=f.readlines()
+
 
     except FileNotFoundError:
-                print("file not found")
-    else:
-                return L
+                sys.exit("file not found")
+    return L
+
 
 main()
 
