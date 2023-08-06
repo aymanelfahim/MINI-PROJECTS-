@@ -21,7 +21,7 @@ def getparametre(K):
 def count(M):
     S=0
     for i in M:
-         
+         i=i.str
     return S
 
 def open(file):
