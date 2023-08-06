@@ -20,6 +20,10 @@ def getparametre()
  def count(M):
     S=0
     for i in M:
-        if i[0]="#" or i=" "
+        if i[0]="#" or i[0]=" ":
+            continue
+        S=S+1
+
+
 
 
