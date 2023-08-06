@@ -1,16 +1,23 @@
 import sys
 def main():
-    getparametre()
+    if getparametre(sys.argv):
+          S=open(sys.argv[1])
+          X=S.readlines()
+          count(X)
 
-def getparametre()
-    if len(sys.argv)>2:
+
+
+
+def getparametre(K)
+    if len(K)>2:
         print("too much command lines")
-    elif len(sys.argv)<2:
+    elif len(K)<2:
         print("too few command lines")
     else:
-        if "py" not in sys.argv[1]:
+        if "py" not in K[1]:
             print("not a python file")
         else:
+              return True
 
  def count(M):
     S=0
@@ -18,16 +25,16 @@ def getparametre()
         if i[0]="#" or i[0]=" ":
             continue
         S=S+1
-def open():
+def open(file):
     try:
-                 L=open("sys.argv[1]")
+                 L=open("file")
 
             except FileNotFoundError:
                 print("file not found")
             else:
-                lines=L.readlines()
+                return L
 
-                count(lines)
+
 
 
 
