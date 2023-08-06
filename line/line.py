@@ -10,14 +10,14 @@ def main():
 
 def getparametre(K):
     if len(K)>2:
-        sysex"too much command lines")
+        sysexit("too much command lines")
     elif len(K)<2:
-        print("too few command lines")
+        sys.exit("too few command lines")
     else:
         if "py" not in K[1]:
-            print("not a python file")
-        else:
-              return True
+            sys.exit("not a python file")
+
+    return True
 def count(M):
     S=0
     for i in M:
