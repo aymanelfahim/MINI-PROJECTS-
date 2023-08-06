@@ -4,4 +4,4 @@ if len(sys.argv)>2:
 elif len(sys.argv)<2:
     print("too few command lines")
 else:
-    if sys.argv[]
+    if sys.argv[2][]
