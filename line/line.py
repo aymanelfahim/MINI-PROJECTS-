@@ -20,15 +20,11 @@ def getparametre(K):
     return True
 def count(M):
     S=0
-    M
-        if i[0]=="#" or i[0]==" ":
-            continue
-        S=S+1
     return S
 
 def open(file):
     try:
-                 L=open(file)
+        L=open(file)
 
     except FileNotFoundError:
                 print("file not found")
