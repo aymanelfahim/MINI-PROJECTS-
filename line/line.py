@@ -1,6 +1,7 @@
 import sys
-def main()
+def main():
     getparametre()
+
 def getparametre()
     if len(sys.argv)>2:
         print("too much command lines")
@@ -10,7 +11,15 @@ def getparametre()
         if "py" not in sys.argv[1]:
             print("not a python file")
         else:
-            try:
+
+ def count(M):
+    S=0
+    for i in M:
+        if i[0]="#" or i[0]=" ":
+            continue
+        S=S+1
+def open():
+    try:
                  L=open("sys.argv[1]")
 
             except FileNotFoundError:
@@ -19,12 +28,7 @@ def getparametre()
                 lines=L.readlines()
 
                 count(lines)
- def count(M):
-    S=0
-    for i in M:
-        if i[0]="#" or i[0]=" ":
-            continue
-        S=S+1
+
 
 
 
