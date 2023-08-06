@@ -4,4 +4,7 @@ if len(sys.argv)>2:
 elif len(sys.argv)<2:
     print("too few command lines")
 else:
-    if sys.argv[2][]
+    if "py" not in sys.argv[1]:
+        print("not a python file")
+    else:
+        
