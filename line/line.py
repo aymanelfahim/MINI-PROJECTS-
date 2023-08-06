@@ -8,7 +8,7 @@ def main():
 
 
 
-def getparametre(K)
+def getparametre(K):
     if len(K)>2:
         print("too much command lines")
     elif len(K)<2:
@@ -18,23 +18,24 @@ def getparametre(K)
             print("not a python file")
         else:
               return True
-
- def count(M):
+def count(M):
     S=0
     for i in M:
-        if i[0]="#" or i[0]=" ":
+        if i[0]=="#" or i[0]==" ":
             continue
         S=S+1
+    return S
+
 def open(file):
     try:
                  L=open("file")
 
-            except FileNotFoundError:
+    except FileNotFoundError:
                 print("file not found")
-            else:
+    else:
                 return L
 
-
+main()
 
 
 
