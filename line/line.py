@@ -16,7 +16,8 @@ def getparametre()
             except FileNotFoundError:
                 print("file not found")
             else:
-                
+                lines=L.readlines()
+
                 count(lines)
  def count(M):
     S=0
