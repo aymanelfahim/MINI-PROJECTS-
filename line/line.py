@@ -10,7 +10,7 @@ def main():
 
 def getparametre(K):
     if len(K)>2:
-        print("too much command lines")
+        sysex"too much command lines")
     elif len(K)<2:
         print("too few command lines")
     else:
