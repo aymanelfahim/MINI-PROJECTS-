@@ -12,7 +12,7 @@ def getparametre(K):
     elif len(K)<2:
         sys.exit("too few command lines")
     else:
-        if  not in K[1]:
-            sys.exit("not a python file")
+        if "csv" not in K[1]:
+            sys.exit("not acsv file")
 
     return True
