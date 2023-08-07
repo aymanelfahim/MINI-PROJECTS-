@@ -2,7 +2,7 @@ import sys
 import tabulate
 import csv
 def main():
-    if getparametre(sys.argv[1]):
+    if getparametre(sys.argv):
 
         L=[]
         with open(sys.argv[1]) as file:
@@ -26,7 +26,7 @@ def getparametre(K):
         sys.exit("too few command lines")
     else:
         if "csv" not in K[1]:
-            sys.exit("not acsv file")
+            sys.exit("not a csv file")
 
     return True
 main()
