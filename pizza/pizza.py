@@ -11,7 +11,7 @@ def main():
             for row in reader:
                     L.append(row)
         headers=L[0]
-        table=L[1:]
+        table=L[1::]
         print(tabulate(table,headers,tablefmt="grid"))
 
 
