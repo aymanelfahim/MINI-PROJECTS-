@@ -10,8 +10,7 @@ def main():
             reader = csv.reader(file)
             for row in reader:
                     L.append(row)
-
-        print (tabulate(L,headers,tablefmt="grid"))
+        print(L)
 
 
 
