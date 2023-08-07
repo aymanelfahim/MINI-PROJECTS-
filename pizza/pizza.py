@@ -26,3 +26,4 @@ def getparametre(K):
             sys.exit("not acsv file")
 
     return True
+main()
