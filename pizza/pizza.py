@@ -1,5 +1,6 @@
 import sys
 import tabulate
+import csv
 def main():
     L=[]
     with open(sys.argv[1]) as file:
