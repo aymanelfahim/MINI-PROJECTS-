@@ -8,7 +8,8 @@ def main():
         with open(sys.argv[1]) as file:
             reader = csv.reader(file)
             for row in reader:
-                L=L.append(row)
+                for i in row:
+                    L=L.append(i)
 
         print (tabulate(L,headers,tablefmt="grid"))
 
