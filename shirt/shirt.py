@@ -29,3 +29,11 @@ def getimage(L):
         if "jpg" or "jpeg" or "png" not in L:
             sys.exit("not the format")
         elif
+
+
+
+
+
+def rech(a,b,c,L):
+    
+
