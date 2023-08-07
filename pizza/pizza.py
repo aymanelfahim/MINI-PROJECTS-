@@ -3,6 +3,7 @@ import tabulate
 import csv
 def main():
     if getparametre(sys.argv):
+        
 
         L=[]
         with open(sys.argv[1]) as file:
