@@ -1,5 +1,5 @@
 import sys
-import tabulate
+from tabulate import tabulate
 import csv
 def main():
     if getparametre(sys.argv):
@@ -10,7 +10,8 @@ def main():
             reader = csv.reader(file)
             for row in reader:
                     L.append(row)
-        print(L)
+        headers=L[0]
+        print(tabulate(L,headers,tablefmt="grid"))
 
 
 
