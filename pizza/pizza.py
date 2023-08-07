@@ -3,13 +3,13 @@ import tabulate
 import csv
 def main():
     if getparametre(sys.argv):
-        
+
 
         L=[]
         with open(sys.argv[1]) as file:
             reader = csv.reader(file)
             for row in reader:
-                    L=L.append(row)
+                    L.append(row)
 
         print (tabulate(L,headers,tablefmt="grid"))
 
