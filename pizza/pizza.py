@@ -1,7 +1,14 @@
 import sys
 import tabulate
 def main():
-    
+    L=[]
+    with open(sys.argv[1]) as file:
+        reader = csv.reader(file)
+        for row in reader:
+            L=L.append(row)
+
+    print (tabulate(L,headers,tablefmt="grid"))
+
 
 
 
