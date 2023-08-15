@@ -5,4 +5,4 @@ def egale(A,B):
         return False
     else:
         return egale(A[1:],B[1:])
-print(egale([1,2,3],[1,2,3]))
+print(egale([1,2,3,4],[1,2,3,4]))
